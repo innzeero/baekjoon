@@ -18,5 +18,5 @@ a, b = map(int, input().split())
 print(a+b)
 print(a-b)
 print(a*b)
-print(a//b)
-print(a % b)
+print(a//b)  # 나눗셈 결과 중 몫만 구하는 방법 : //
+print(a % b)  # 나눗셈 결과 중 나머지만 구하는 방법 : %
