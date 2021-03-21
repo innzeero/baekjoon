@@ -24,8 +24,8 @@ a, b = input().split()
 print(int(a) + int(b))
 
 # 3)
-a, b = map(int, input().split())
-print(a + b)
+a, b = map(int, input().split())  # 공백을 기준으로 숫자를 입력받아 각각 a, b라는 변수에 저장
+print(a + b)  # a, b를 더한 값을 출력
 
 
 # python에서 문자를 입력받기 위해서는 input()을 사용한다
