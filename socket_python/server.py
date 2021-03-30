@@ -10,10 +10,13 @@ from twisted.internet import protocol, reactor
 
 class Chat(protocol.Protocol):
     def connectionMade(self):
-        print('connected')  # 사용자가 서버에 접속하면 'connected' 메시지 출력
+        # print('connected')  # 사용자가 서버에 접속하면 'connected' 메시지 출력
+        self.transport.write('connected'.encode())
+        # 클라이언트가 연결되면 connected 메시지를 클라이언트에 전송
+        # encode : 문자열 -> 바이트
 
     def dateReceived(self, data):
-        print(data)  # 사용자가 서버에 메시지를 보내면 실행 사용자 메시지(data) 출력
+        print(data.decode('utf-8'))  # 사용자가 서버에 메시지를 보내면 실행 사용자 메시지(data) 출력
 
 # 통신 프로토콜 정의
 
