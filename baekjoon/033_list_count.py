@@ -28,7 +28,7 @@ n = a*b*c
 
 # 2.
 li = [int(t) for t in str(n)]
-print(li)
+# print(li)
 
 for i in range(0, 10):
     print(li.count(i))
