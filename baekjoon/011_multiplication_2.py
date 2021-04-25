@@ -43,7 +43,14 @@ b3 = int(b[0])  # 100의 자리
 total = (a*b1) + (a*b2)*10 + (a*b3)*10**2
 
 # 순서에 맞춰 출력한다
-print(a*b1)
-print(a*b2)
-print(a*b3)
-print(total)
+# print(a*b1)
+# print(a*b2)
+# print(a*b3)
+# print(total)
+
+# sep을 사용한 또다른 출력방법
+print(a*b1, a*b2, a*b3, total, sep='\n')
+
+# sep은 print() 함수에서 출력할 값이 여러 개일 경우
+# 값 사이사이 삽입할 문자를 정할 수 있는 파라미터이다.
+# 위 문제에서는 개행을 사용, 공백이나 , 또는 ; 등을 사용할 수 있다.
