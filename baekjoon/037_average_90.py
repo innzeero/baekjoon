@@ -18,11 +18,22 @@
 import sys
 
 c = int(input())
-sum_score = 0
 
 for i in range(c):
+    sum_score = 0
+    t = 0   
     case = list(map(int, sys.stdin.readline().split()))
-    # print(case[0])
     n = case[0]
-    # print(n)
+    score = case[1:]
+    sum_score = sum(score)
+    avg = sum_score / n
+    for j in score:
+        if j > avg:
+            t += 1
+        else :
+            pass
+    
+    res = t/n*100
+    print(format(res, ".3f") + "%")
+
     
